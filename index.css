@@ -1,0 +1,195 @@
+.header
+{
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.header img{
+    margin: 5px;
+    
+}
+
+/* navigation bar style */
+
+.navbar_container {
+    width: 100%;
+    background-color: #21a9da;
+    overflow: hidden;
+}
+
+.navbar_container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows wrapping if needed */
+}
+
+.navbar_container li {
+    float: left;
+}
+
+.navbar_container li a {
+    display: block;
+    color: rgb(235, 19, 19);
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar_container li a:hover {
+    background-color: #1814eb;
+}
+
+/* Ensure horizontal layout on mobile */
+@media screen and (max-width: 600px) {
+    .navbar_container ul {
+        flex-direction: row; /* Keep items in a row */
+        flex-wrap: nowrap; /* Prevent wrapping */
+        overflow-x: auto; /* Allow horizontal scrolling if needed */
+    }
+    
+    .navbar_container li {
+        width: auto; /* Adjust width to content */
+    }
+    
+    .navbar_container li a {
+        padding: 10px;
+        text-align: center; /* Center text */
+    }
+}
+
+
+
+main {
+    background-color: aqua;
+    margin: 20px;
+    border-radius: 10px;
+    border: 3px solid #333;
+    width:auto;
+}
+.Home
+{
+    text-align: center;
+    width: auto;
+
+}
+/* General styles for the form */
+#watch-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#watch-form label {
+    font-weight: bold;
+}
+
+#watch-form input,
+#watch-form select {
+    padding: 10px;
+    border: 5px solid #e47a7a;
+    border-radius: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #d9534f;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #c9302c;
+}
+
+/* Responsive adjustments */
+@media (min-width: 600px) {
+    #watch-form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #watch-form label,
+    #watch-form input,
+    #watch-form select {
+        flex: 1 1 45%;
+    }
+
+    #watch-form label {
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    .btn-container {
+        flex: 1 1 100%;
+        justify-content: flex-end;
+    }
+}
+
+.btn{
+    text-align: center;
+    background-color: orange;
+    color: black;
+    cursor:pointer;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+
+
+footer{
+    display: flex;
+    background-color: hsl(0, 19%, 73%);
+    padding: 10px;
+    width: auto;
+}
+footer h1{
+    color: orchid;
+    width: auto;
+}
+
+footer section{
+    width: auto;
+    border-right: 1px solid rgb(104, 126, 188);
+}
+.footer-wid{
+    width: auto;
+}
+
+
+#watches-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    gap: 0px; /* Space between items */
+    justify-content: center;
+    width: auto; /* Center items horizontally */
+}
+
+.watch{
+    border:2px solid gray;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 150px;
+}

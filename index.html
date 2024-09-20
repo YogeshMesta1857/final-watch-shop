@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Website</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        <img width="50px" height="50px" src="images/watch1.jpg" alt="logo"/>
+        <img width="50px" height="50px" src="images/watch1.jpg" alt="logo"/>
+    </header>
+    <div class="navbar_container">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#services">Services</a></li>
+        </ul>
+    </div>
+    <main>
+        <section class="Home">
+            <h1>Welcome to Watch Shopping Experience</h1>
+            <form id="watch-form">
+                <label for="brand">Select Watch Brand</label>
+                <select name="brand" id="brand">
+                    <option value="sonata">Sonata</option>
+                    <option value="casio">Casio</option>
+                    <option value="fossil">Fossil</option>
+                    <option value="hmt">HMT</option>
+                </select>
+                
+                <label for="name">Select Watch</label>
+                <select name="name" id="name">
+                    <option value="sonata">Sonata ET collection</option>
+                    <option value="casio">Casio WT collection</option>
+                    <option value="fossil">Fossil FT collection</option>
+                    <option value="hmt">HMT HT collection</option>
+                </select>
+                
+                <label for="price">Price</label>
+                <input type="number" name="price" id="price"/>
+                
+                <label for="image">Image</label>
+                <input type="file" name="image" id="image"/>
+                <div class="btn-container">
+                <button type="submit" class="btn btn-danger" >Submit</button>
+            </div>
+            </form>
+        </section>
+    </main>
+    <h2>Watches</h2>
+    <div id="watches-container"></div>
+    <footer>
+        <section id="home" class="Home sample">
+            <h1>Home</h1>
+            <p>Please check the different offers on the home page</p>
+        </section>
+        <section id="contact" class="contact sample">
+            <h1>Contact Us</h1>
+            <p>We deliver high-quality watches and provide excellent services</p>
+        </section>
+        <section id="services" class="Services sample">
+            <h1>Services</h1>
+            <p>Watch Shopping</p>
+            <p>Watch Services</p>
+            <p>Watch Replacement</p>
+            <p>Watch Buyback</p>
+        </section>
+        <section id="about" class="About sample">
+            <h1>About Us</h1>
+            <p>Please contact customer care if you have any queries</p>
+        </section>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
